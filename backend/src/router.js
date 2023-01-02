@@ -37,6 +37,8 @@ router.get("/session-in", (req, res) => {
   res.send();
 });
 
-router.get("/session-out", (req, res) => {});
+router.get("/session-out", (req, res) => {
+  res.send(`${req.session.song}`);
+});
 
 module.exports = router;
